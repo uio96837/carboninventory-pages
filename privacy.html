@@ -1,0 +1,97 @@
+<title>CarbonInventory — Privacy Policy</title>
+<style>
+  :root{
+    --paper:#F1F3EE; --paper-raised:#FBFBF7; --ink:#1B2420; --ink-soft:#4B564F;
+    --line:#C9CDC2; --accent:#2F6F5E; --accent-soft:#E3ECE6; --rust:#B8531E; --rust-soft:#F6E6DC;
+    --font-display: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang TC', 'Microsoft JhengHei', Roboto, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, 'Cascadia Code', Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --paper:#10160F; --paper-raised:#182019; --ink:#E7ECE5; --ink-soft:#A9B6AC; --line:#2A362E; --accent:#6FBFA6; --accent-soft:#1C2C24; --rust:#E2824C; --rust-soft:#33221A; }
+  }
+  :root[data-theme="dark"]{ --paper:#10160F; --paper-raised:#182019; --ink:#E7ECE5; --ink-soft:#A9B6AC; --line:#2A362E; --accent:#6FBFA6; --accent-soft:#1C2C24; --rust:#E2824C; --rust-soft:#33221A; }
+  :root[data-theme="light"]{ --paper:#F1F3EE; --paper-raised:#FBFBF7; --ink:#1B2420; --ink-soft:#4B564F; --line:#C9CDC2; --accent:#2F6F5E; --accent-soft:#E3ECE6; --rust:#B8531E; --rust-soft:#F6E6DC; }
+
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{ background:var(--paper); color:var(--ink); font-family:var(--font-body); line-height:1.65; -webkit-font-smoothing:antialiased; }
+  ::selection{ background:var(--accent); color:var(--paper-raised); }
+  .wrap{ max-width:720px; margin:0 auto; padding:0 28px 90px; }
+
+  header.doc{ padding:56px 0 28px; border-bottom:1px solid var(--line); margin-bottom:36px; }
+  .mark{ display:flex; align-items:center; gap:10px; font-family:var(--font-mono); font-size:13px; margin-bottom:22px; }
+  .mark .seal{ width:24px;height:24px;border-radius:50%; border:1.4px solid var(--accent); display:flex;align-items:center;justify-content:center; color:var(--accent); font-size:12px; flex:none; }
+  .mark b{ font-family:var(--font-display); font-size:15px; }
+  h1{ font-family:var(--font-display); font-weight:400; font-size:clamp(28px,4vw,38px); margin:0 0 12px; text-wrap:balance; }
+  .meta{ font-family:var(--font-mono); font-size:12.5px; color:var(--ink-soft); }
+
+  h2{ font-family:var(--font-display); font-weight:400; font-size:21px; margin:44px 0 12px; }
+  h2:first-of-type{ margin-top:0; }
+  p{ font-size:15.5px; margin:0 0 14px; max-width:64ch; }
+  ul{ margin:0 0 14px; padding-left:20px; }
+  li{ font-size:15.5px; margin-bottom:6px; max-width:60ch; }
+
+  .card{ background:var(--paper-raised); border:1px solid var(--line); border-radius:6px; padding:20px 24px; margin:0 0 14px; }
+  .card p:last-child{ margin-bottom:0; }
+  .callout{ border-left:3px solid var(--accent); background:var(--accent-soft); padding:16px 20px; border-radius:0 4px 4px 0; margin:0 0 20px; }
+  .callout p{ margin:0; color:var(--ink); }
+
+  table{ width:100%; border-collapse:collapse; margin:0 0 20px; font-size:14.5px; }
+  th,td{ text-align:left; padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th{ font-family:var(--font-mono); font-size:11.5px; letter-spacing:0.04em; text-transform:uppercase; color:var(--ink-soft); font-weight:600; }
+  .table-wrap{ overflow-x:auto; }
+
+  .fill{ font-family:var(--font-mono); background:var(--rust-soft); color:var(--rust); padding:1px 6px; border-radius:3px; }
+
+  footer{ margin-top:56px; padding-top:24px; border-top:1px solid var(--line); color:var(--ink-soft); font-size:13px; }
+</style>
+
+<div class="wrap">
+  <header class="doc">
+    <div class="mark"><span class="seal">✓</span><b>CarbonInventory</b></div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: 2026-08-02 · Applies to the CarbonInventory Android app</p>
+  </header>
+
+  <div class="callout">
+    <p><strong>In one sentence:</strong> CarbonInventory doesn't collect your data — everything you enter stays in a local database on your device, and nothing is uploaded anywhere unless you personally choose to export or back it up yourself.</p>
+  </div>
+
+  <h2>What this app stores, and where</h2>
+  <p>CarbonInventory is a greenhouse-gas inventory tool. Everything you enter — site boundaries, equipment lists, activity records, custom emission factors, and app preferences — is stored in a local database on your device (Android's Room/SQLite storage and DataStore preferences). All emission calculations run entirely on-device.</p>
+  <p>The app does not use any analytics, advertising, or crash-reporting SDKs, and it does not create a user account or require sign-in.</p>
+
+  <h2>Data that leaves your device</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Action</th><th>What happens</th></tr></thead>
+      <tbody>
+        <tr><td>Exporting a spreadsheet or a full backup file</td><td>Written to a location <em>you</em> choose via Android's file picker (e.g. local storage, Google Drive, OneDrive). The app never uploads this automatically or to its own servers — it has none.</td></tr>
+        <tr><td>Unlocking the detailed export (in-app purchase)</td><td>Handled entirely by Google Play Billing. CarbonInventory never sees your payment details; Google's own Play privacy policies govern that transaction.</td></tr>
+        <tr><td>Everything else</td><td>Stays on-device. There is currently no cloud sync or account system.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Data sharing with third parties</h2>
+  <p>CarbonInventory does not sell, rent, or share your inventory data with any third party. The only third-party service involved at all is Google Play Billing, used solely to process the optional one-time unlock for detailed spreadsheet export.</p>
+
+  <h2>Your control over your data</h2>
+  <ul>
+    <li><strong>Export</strong> any or all of your data at any time, in spreadsheet or full-backup (JSON) form.</li>
+    <li><strong>Delete</strong> your data by uninstalling the app, or by restoring an empty/older backup, at any time — nothing persists outside your device.</li>
+    <li><strong>Portability</strong>: the full-backup format is a plain, human-readable JSON file you can inspect, move to a new device, or store wherever you like.</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>CarbonInventory is a business tool intended for organizational greenhouse-gas accounting and is not directed at children. It does not knowingly collect information from anyone.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this app ever adds a feature that changes how data is handled (for example, an optional cloud backup), this policy will be updated first, and users will be asked for consent before that feature is enabled — consistent with how the app already works today.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be sent to <a href="mailto:jay975920705@gmail.com">jay975920705@gmail.com</a>.</p>
+
+  <footer>CarbonInventory is an independently developed app, not affiliated with any government agency. Emission factors are sourced from official public datasets; see the app's Factor Management screen for the full list and citations.</footer>
+</div>
