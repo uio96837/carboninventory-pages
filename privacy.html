@@ -51,11 +51,12 @@
   <header class="doc">
     <div class="mark"><span class="seal">✓</span><b>Carbon Explorer</b></div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: 2026-08-02 · Applies to the Carbon Explorer Android app</p>
+    <p class="meta">Last updated: 2026-09-11 · Applies to the Carbon Explorer Android app</p>
   </header>
 
   <div class="callout">
     <p><strong>In one sentence:</strong> Carbon Explorer doesn't collect your data — everything you enter stays in a local database on your device, and nothing is uploaded anywhere unless you personally choose to export or back it up yourself.</p>
+    <p>That includes Android's own backup: the app <strong>opts out of system auto-backup and device-to-device transfer</strong>, so your inventory is never copied to Google cloud backup and does not follow you to a new phone by itself. The trade-off is that <strong>keeping a backup is up to you</strong> — export one from Settings before changing phones, resetting, or uninstalling.</p>
   </div>
 
   <h2>What this app stores, and where</h2>
@@ -69,6 +70,7 @@
       <tbody>
         <tr><td>Exporting a spreadsheet or a full backup file</td><td>Written to a location <em>you</em> choose via Android's file picker (e.g. local storage, Google Drive, OneDrive). The app never uploads this automatically or to its own servers — it has none.</td></tr>
         <tr><td>Unlocking the detailed export (in-app purchase)</td><td>Handled entirely by Google Play Billing. Carbon Explorer never sees your payment details; Google's own Play privacy policies govern that transaction.</td></tr>
+        <tr><td>Android system backup / new-device transfer</td><td>Nothing. The app declares <span class="fill">allowBackup="false"</span> and excludes every data domain from both <span class="fill">cloud-backup</span> and <span class="fill">device-transfer</span> rules, so Android's own backup mechanism skips it entirely.</td></tr>
         <tr><td>Everything else</td><td>Stays on-device. There is currently no cloud sync or account system.</td></tr>
       </tbody>
     </table>
@@ -80,7 +82,7 @@
   <h2>Your control over your data</h2>
   <ul>
     <li><strong>Export</strong> any or all of your data at any time, in spreadsheet or full-backup (JSON) form.</li>
-    <li><strong>Delete</strong> your data by uninstalling the app, or by restoring an empty/older backup, at any time — nothing persists outside your device.</li>
+    <li><strong>Delete</strong> your data by uninstalling the app, or by restoring an empty/older backup, at any time. Because the app is excluded from system backup, uninstalling really does remove it — no copy is left behind in Google's cloud backup for a future device to restore.</li>
     <li><strong>Portability</strong>: the full-backup format is a plain, human-readable JSON file you can inspect, move to a new device, or store wherever you like.</li>
   </ul>
 
