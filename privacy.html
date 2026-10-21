@@ -51,16 +51,17 @@
   <header class="doc">
     <div class="mark"><span class="seal">✓</span><b>Carbon Explorer</b></div>
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: 2026-09-11 · Applies to the Carbon Explorer Android app</p>
+    <p class="meta">Last updated: 2026-10-21 · Applies to the Carbon Explorer Android and iOS apps</p>
   </header>
 
   <div class="callout">
     <p><strong>In one sentence:</strong> Carbon Explorer doesn't collect your data — everything you enter stays in a local database on your device, and nothing is uploaded anywhere unless you personally choose to export or back it up yourself.</p>
-    <p>That includes Android's own backup: the app <strong>opts out of system auto-backup and device-to-device transfer</strong>, so your inventory is never copied to Google cloud backup and does not follow you to a new phone by itself. The trade-off is that <strong>keeping a backup is up to you</strong> — export one from Settings before changing phones, resetting, or uninstalling.</p>
+    <p><strong>On Android</strong>, the app <strong>opts out of system auto-backup and device-to-device transfer</strong>, so your inventory is never copied to Google cloud backup and does not follow you to a new phone by itself. The trade-off is that <strong>keeping a backup is up to you</strong> — export one from Settings before changing phones, resetting, or uninstalling.</p>
+    <p><strong>On iOS</strong>, the app does not opt out of Apple's device backup. If you use iCloud Backup or a computer backup, iOS may include the app's data in that backup, under your own Apple ID and settings. That copy is managed by Apple and your device; the developer has no access to it. You can still export a backup file from Settings for a copy you control.</p>
   </div>
 
   <h2>What this app stores, and where</h2>
-  <p>Carbon Explorer is a greenhouse-gas inventory tool. Everything you enter — site boundaries, equipment lists, activity records, custom emission factors, and app preferences — is stored in a local database on your device (Android's Room/SQLite storage and DataStore preferences). All emission calculations run entirely on-device.</p>
+  <p>Carbon Explorer is a greenhouse-gas inventory tool. Everything you enter — site boundaries, equipment lists, activity records, custom emission factors, and app preferences — is stored in a local database on your device (SQLite storage and app preferences, in the app's own private storage on both Android and iOS). All emission calculations run entirely on-device.</p>
   <p>The app does not use any analytics, advertising, or crash-reporting SDKs, and it does not create a user account or require sign-in.</p>
 
   <h2>Data that leaves your device</h2>
@@ -68,21 +69,21 @@
     <table>
       <thead><tr><th>Action</th><th>What happens</th></tr></thead>
       <tbody>
-        <tr><td>Exporting a spreadsheet or a full backup file</td><td>Written to a location <em>you</em> choose via Android's file picker (e.g. local storage, Google Drive, OneDrive). The app never uploads this automatically or to its own servers — it has none.</td></tr>
-        <tr><td>Unlocking the detailed export (in-app purchase)</td><td>Handled entirely by Google Play Billing. Carbon Explorer never sees your payment details; Google's own Play privacy policies govern that transaction.</td></tr>
-        <tr><td>Android system backup / new-device transfer</td><td>Nothing. The app declares <span class="fill">allowBackup="false"</span> and excludes every data domain from both <span class="fill">cloud-backup</span> and <span class="fill">device-transfer</span> rules, so Android's own backup mechanism skips it entirely.</td></tr>
+        <tr><td>Exporting a spreadsheet or a full backup file</td><td>Written to a location <em>you</em> choose via the system file picker (Android's file picker, or the Files app and share sheet on iOS — e.g. local storage, Google Drive, OneDrive, iCloud Drive). The app never uploads this automatically or to its own servers — it has none.</td></tr>
+        <tr><td>Unlocking the detailed export (in-app purchase)</td><td>Handled entirely by the platform store — Google Play Billing on Android, Apple's App Store on iOS. Carbon Explorer never sees your payment details; Google's or Apple's own privacy policies govern that transaction.</td></tr>
+        <tr><td>System backup / new-device transfer</td><td><strong>Android:</strong> nothing. The app declares <span class="fill">allowBackup="false"</span> and excludes every data domain from both <span class="fill">cloud-backup</span> and <span class="fill">device-transfer</span> rules, so Android's own backup mechanism skips it entirely. <strong>iOS:</strong> if you have iCloud Backup or a computer backup turned on, iOS may include the app's data in your own backup; the developer cannot access it.</td></tr>
         <tr><td>Everything else</td><td>Stays on-device. There is currently no cloud sync or account system.</td></tr>
       </tbody>
     </table>
   </div>
 
   <h2>Data sharing with third parties</h2>
-  <p>Carbon Explorer does not sell, rent, or share your inventory data with any third party. The only third-party service involved at all is Google Play Billing, used solely to process the optional one-time unlock for detailed spreadsheet export.</p>
+  <p>Carbon Explorer does not sell, rent, or share your inventory data with any third party. The only third-party services involved at all are Google Play Billing (Android) and Apple's App Store (iOS), used solely to process the optional one-time unlock for detailed spreadsheet export.</p>
 
   <h2>Your control over your data</h2>
   <ul>
     <li><strong>Export</strong> any or all of your data at any time, in spreadsheet or full-backup (JSON) form.</li>
-    <li><strong>Delete</strong> your data by uninstalling the app, or by restoring an empty/older backup, at any time. Because the app is excluded from system backup, uninstalling really does remove it — no copy is left behind in Google's cloud backup for a future device to restore.</li>
+    <li><strong>Delete</strong> your data by uninstalling the app, or by restoring an empty/older backup, at any time. On Android, because the app is excluded from system backup, uninstalling really does remove it — no copy is left behind in Google's cloud backup for a future device to restore. On iOS, uninstalling removes the app's data from your device; if you use iCloud Backup or a computer backup, an older copy may remain in that backup until you delete it in your Apple ID's iCloud storage settings or your computer's backups.</li>
     <li><strong>Portability</strong>: the full-backup format is a plain, human-readable JSON file you can inspect, move to a new device, or store wherever you like.</li>
   </ul>
 
